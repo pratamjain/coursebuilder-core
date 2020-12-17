@@ -15,7 +15,6 @@
 """Tests for modules/certificate/."""
 
 __author__ = 'John Orr (jorr@google.com)'
-
 from common import utc
 from controllers import sites
 from models import courses
@@ -33,13 +32,10 @@ from tests.functional import actions
 from google.appengine.api import namespace_manager
 from google.appengine.ext import db
 
-
 class MockHandler(object):
-
     def gettext(self, text):
         return text
-
-
+    
 class CertificateHandlerTestCase(actions.TestBase):
     """Tests for the handler which presents the certificate."""
 
